@@ -19,73 +19,77 @@ body {
 
 
 
-#container{
-    height: 90%;
-    width: 100%;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(135deg);
-    position: relative;
-    left: 98em;
-
-}
-
-.droite {
-    
-    height: 800px;
-    width: 800px;
-    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%  ;
- background-color: black;
-   
-    
-}
-
-#container-two {
-    height: 90%;
-    width: 100%;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(135deg);
-    position: relative;
-    right: 98em;
-}
-
-
-
-.gauche {
-    height: 800px;
-    width: 800px;
-    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%  ;
-    background-color: black;
-}
-
-#container-three {
-    
-    width: 200%;
+.ecran {
+    height: 100%;
+    width:100%;
     border: solid;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(45deg);
-    position: relative;
-    bottom: 40em;
-    right: 50em;
+    background: white;
+   
 }
 
-.haut {
-    height: 800px;
-    width: 800px;
-    border-radius: 100% 0% 100% 0% / 100% 0% 100% 0%  ;
-    background-color: black;
+.gauche {
+    background: rgb(0, 0, 0);
+    
+    border: solid;
+    height: 100%;
+    width: 100%;
+    transform: rotate(25deg);
+   
+    border-radius: 0% 100% 0% 100% / 0% 100% 0% 100%; 
+    
 }
 
+.droite{
+    background: rgb(0, 0, 0);
+    border: solid;
+    height: 100%;
+    width: 100%;
+    transform: rotate(0deg);
+   
+    border-radius: 0% 100% 0% 100% / 0% 100% 0% 100%; 
+    
+}
 
+.haut{
+    background: rgb(0, 0, 0);
+    border: solid;
+    height: 100%;
+    width: 100%;
+    transform: rotate(0deg);
+    
+    border-radius: 0% 100% 0% 100% / 0% 100% 0% 100%; 
 
+}
 
 footer {
    
 }
+
+
+
+
+/* .element {
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    width: 200px;
+    height: 100px;
+    background-color: red;
+  } */
+
+
+  /* .element {
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    transform: skew(0, -20deg);
+  } */
+
+  
+  /* .element {
+  width: 200px;
+  height: 100px;
+  background-color: green;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+} */
+
+  
