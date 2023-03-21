@@ -1,3 +1,5 @@
+
+// verification quizz
 const correctAnswers = ['a', 'b', 'c', 'b', 'b'];
 
 document.getElementById('quiz-form').addEventListener('submit', (event) => {
