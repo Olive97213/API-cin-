@@ -1,4 +1,4 @@
-const correctAnswers = ['a', 'a', 'b', 'c', 'b', 'b'];
+const correctAnswers = ['a', 'b', 'c', 'b', 'b'];
 
 document.getElementById('quiz-form').addEventListener('submit', (event) => {
   event.preventDefault();
