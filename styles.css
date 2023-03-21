@@ -10,23 +10,66 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 14px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
     
 }
 
 /* nav bar */
-.navbar:before {
+.navbar{
     content: "";
     position: absolute;
+    display: flex;
+    justify-content:center;
+    align-items: center;
     top: -30px;
     left: 0;
-    width: 100%;
-    height: 80px;
+    width: 100vw;
+    height: 8%;
     background-color: #eeede9;
     border-radius: 0 0 50% 50%;
+    z-index: 1;
   }
+
+
+
+.icone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    
+    margin-top: 2em;
+}
+
+.lien-acceuil {
+    height:5vh;
+    margin: 2em;
+}
+
+.lien-bobine {
+    height:3vh;
+    margin: 2em;
+}
+
+.lien-clap {
+    height:2vh;
+    margin: 2em;
+}
+
+
+
+.lien-acceuil:hover{
+    scale: 2;
+}
+.lien-bobine:hover{
+    scale: 2;
+}
+.lien-clap:hover{
+    scale: 2;
+}
 
 
 
@@ -55,11 +98,9 @@ label {
     position: relative;
     cursor: pointer;
     display: flex;
-    height: 15px;
-    width: 15px;
+    height: 10px;
+    width: 10px;
     border-radius: 75px;
-    background: rgba(232, 168, 5, 0.288);
-    box-shadow: 0 0 10px #feb20094, 0 0 30px #fec70085, 0 0 50px #fecf0081;
     justify-content: center;
     align-items: center;
     left: 20em;
@@ -84,7 +125,10 @@ span {
     top: 0em;
     left: 0em;
     z-index: -1;
+    border-radius: 75px;
+    box-shadow: 0 0 10px #feb20098, 0 0 30px #fec70099, 0 0 50px #fecf00a4;
 }
+
 
 .eyes:checked+span {
     background: url(sauron-eyes.png);
@@ -115,7 +159,7 @@ span {
     width: 70%;
     margin: 0em auto;
     transform-origin: center;
-    transform: perspective(600px) rotateX(10deg) translateY(-12%);
+    transform: perspective(600px) rotateX(20deg) translateY(-20%);
 }
 
 .title {
@@ -123,7 +167,7 @@ span {
     animation: title 2s ease;
     transform-origin: center;
     margin: 0.8em;
-    transform: perspective(600px) rotateX(10deg);
+    transform: perspective(600px) rotateX(20deg);
 
 }
 
@@ -135,7 +179,7 @@ span {
 
     100% {
 
-        transform: perspective(600px) rotateX(10deg) translatey(-12%);
+        transform: perspective(600px) rotateX(20deg) translatey(-20%);
     }
 }
 
@@ -198,8 +242,8 @@ span {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 60px;
-  background-color: #eeede9;
+  height: 50px;
+  background-image: url(sieges.jpg);
   border-radius: 0 0 50% 50%;
   rotate: 180deg;
 
@@ -211,20 +255,26 @@ span {
   text-align:center;
   color: transparent;
   -webkit-text-stroke:1px #c5d325 ;
-  background-image: url('images/back.png');
+  background-image: url("ring.png");
   -webkit-background-clip: text;
   background-position: 0 0;
   animation: back 20s linear infinite;
+}
+
+footer {
+    position: relative;
+    top:28em;
 }
 
 .groupe {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid;
     justify-content: space-around;
-    height:15vh;
+    height:10vh;
     width: 100vw;
+    background-color: #1febebd6;
+    box-shadow: 0 0 10px #feb200fb, 0 0 30px #fec700e5, 0 0 50px #fe9d00ec;
 }
 
 h4 {
@@ -236,25 +286,45 @@ h4 {
 .reseaux {
     display: inline-block;
     text-align: center;
-    border: solid;
-    height: 15vh;
+    height: 10vh;
     width: 20vw;
+    
 
 }
 
 .contact {
     display: inline-block;
     text-align: center;
-    border: solid;
-    height: 15vh;
+    height: 10vh;
     width: 20vw;
 }
 
 .reseaux a {
-    margin: 1em;
+    margin:1em;
+    font-size:11px;
+}
+
+.reseaux p {
+    margin: 0.2em;
 }
 @keyframes back{
   100%{
     background-position: 2000px 0;
   }
 }
+
+.text-center{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 6vh;
+    background-image: url(sieges.jpg);
+}
+
+.text-center a {
+    color: rgb(255, 162, 1);
+    margin-bottom: 1em;
+    text-decoration: none;
+}
+
+
