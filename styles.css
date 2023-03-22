@@ -13,61 +13,64 @@ body {
     background-color: rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;
     overflow: hidden;
-    
+
 }
 
 /* nav bar */
-.navbar{
+.navbar {
     content: "";
     position: absolute;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     top: -30px;
     left: 0;
     width: 100vw;
     height: 8%;
-    background-color: #eeede9;
+    background-color: #f9e4b7;
+    box-shadow: 0 0 10px #f9e4b7a4, 0 0 30px #f9e4b7af, 0 0 50px #f9e4b77a;
     border-radius: 0 0 50% 50%;
     z-index: 1;
-  }
+}
 
 
 
-.icone{
+.icone {
     display: flex;
     justify-content: center;
     align-items: center;
     height: auto;
     width: auto;
-    
+
     margin-top: 2em;
 }
 
 .lien-acceuil {
-    height:5vh;
+    height: 5vh;
     margin: 2em;
 }
 
 .lien-bobine {
-    height:3vh;
+    height: 3vh;
     margin: 2em;
 }
 
 .lien-clap {
-    height:2vh;
+    height: 2vh;
     margin: 2em;
 }
 
 
 
-.lien-acceuil:hover{
+.lien-acceuil:hover {
     scale: 2;
 }
-.lien-bobine:hover{
+
+.lien-bobine:hover {
     scale: 2;
 }
-.lien-clap:hover{
+
+.lien-clap:hover {
     scale: 2;
 }
 
@@ -119,7 +122,7 @@ span {
     color: rgb(245, 143, 0);
     width: 15px;
     height: 15px;
-    background: url(ring.png);
+    background: url(images/ring.png);
     background-size: auto 15px;
     background-repeat: no-repeat;
     top: 0em;
@@ -131,7 +134,7 @@ span {
 
 
 .eyes:checked+span {
-    background: url(sauron-eyes.png);
+    background: url(images/sauron-eyes.png);
     background-size: 20px;
     background-position: center;
     background-repeat: no-repeat;
@@ -235,35 +238,34 @@ span {
 }
 
 /* footer */
-.footer{
-  position: relative;
-  top:0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: 50px;
-  background-image: url(sieges.jpg);
-  border-radius: 0 0 50% 50%;
-  rotate: 180deg;
-
-  
+.footer {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50px;
+    background-image: url(images/sieges.jpg);
+    border-radius: 0 0 50% 50%;
+    rotate: 180deg;
 }
-.footer1{
-  font-size: 3rem;
-  rotate: 180deg;
-  text-align:center;
-  color: transparent;
-  -webkit-text-stroke:1px #c5d325 ;
-  background-image: url("ring.png");
-  -webkit-background-clip: text;
-  background-position: 0 0;
-  animation: back 20s linear infinite;
+
+.footer1 {
+    font-size: 3rem;
+    rotate: 180deg;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 1px #c5d325;
+    background-image: url(images/flamme.jpg);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
 }
 
 footer {
     position: relative;
-    top:28em;
+    top: 28em;
 }
 
 .groupe {
@@ -271,16 +273,16 @@ footer {
     justify-content: center;
     align-items: center;
     justify-content: space-around;
-    height:10vh;
+    height: 10vh;
     width: 100vw;
-    background-color: #1febebd6;
-    box-shadow: 0 0 10px #feb200fb, 0 0 30px #fec700e5, 0 0 50px #fe9d00ec;
+    background-color: #ffffffd2;
+    box-shadow: 0 0 10px #ffffffd2, 0 0 30px #ffffffd2, 0 0 50px, #ffffffd2;
 }
 
 h4 {
     text-transform: uppercase;
     font-weight: bold;
-    margin: 1em;
+    margin: 0.7em;
 }
 
 .reseaux {
@@ -288,7 +290,7 @@ h4 {
     text-align: center;
     height: 10vh;
     width: 20vw;
-    
+
 
 }
 
@@ -300,25 +302,26 @@ h4 {
 }
 
 .reseaux a {
-    margin:1em;
-    font-size:11px;
+    margin: 1em;
+    font-size: 11px;
 }
 
 .reseaux p {
     margin: 0.2em;
 }
-@keyframes back{
-  100%{
-    background-position: 2000px 0;
-  }
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
+    }
 }
 
-.text-center{
+.text-center {
     display: flex;
     justify-content: center;
-    align-items:center;
-    height: 6vh;
-    background-image: url(sieges.jpg);
+    align-items: center;
+    height: 4vh;
+    background-image: url(images/sieges.jpg);
 }
 
 .text-center a {
@@ -327,4 +330,4 @@ h4 {
     text-decoration: none;
 }
 
-
+/* footer */
