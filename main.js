@@ -30,3 +30,9 @@ document.getElementById('quiz-form').addEventListener('submit', (event) => {
   });
   form.appendChild(restartButton);
 });
+
+let popCorn = document.querySelector(".popcorn");
+
+popCorn.onclick = function (){
+  popCorn.classList.toggle("active")
+} 
